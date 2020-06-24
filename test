@@ -1,0 +1,72 @@
+import turtle
+
+eesha = turtle.Turtle()
+eesha.speed(0)
+
+wn = turtle.Screen()
+wn.bgcolor("white")
+
+
+def draw(s):
+    for i in range(6):
+        for i in range(2):
+            eesha.color("red")
+            eesha.forward(s)
+            eesha.right(90)
+            eesha.forward(s)
+            eesha.right(90)
+        eesha.right(12)
+        for i in range(2):
+            eesha.color("orange")
+            eesha.forward(s)
+            eesha.right(90)
+            eesha.forward(s)
+            eesha.right(90)
+        eesha.right(12)
+        for i in range(2):
+            eesha.color("yellow")
+            eesha.forward(s)
+            eesha.right(90)
+            eesha.forward(s)
+            eesha.right(90)
+        eesha.right(12)
+        for i in range(2):
+            eesha.color("green")
+            eesha.forward(s)
+            eesha.right(90)
+            eesha.forward(s)
+            eesha.right(90)
+        eesha.right(12)
+        for i in range(2):
+            eesha.color("blue")
+            eesha.forward(s)
+            eesha.right(90)
+            eesha.forward(s)
+            eesha.right(90)
+        eesha.right(12)
+
+
+eesha.pensize(5)
+draw(100)
+
+eesha.penup()
+eesha.goto(-200, 200)
+eesha.pendown()
+draw(50)
+
+eesha.penup()
+eesha.goto(200, 200)
+eesha.pendown()
+draw(50)
+
+eesha.penup()
+eesha.goto(-200, -200)
+eesha.pendown()
+draw(50)
+
+eesha.penup()
+eesha.goto(200, -200)
+eesha.pendown()
+draw(50)
+
+wn.exitonclick()
